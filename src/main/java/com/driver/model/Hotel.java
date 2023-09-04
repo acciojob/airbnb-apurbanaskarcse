@@ -11,6 +11,10 @@ public class Hotel {
 
     private int pricePerNight;
 
+    public Hotel(){
+
+    }
+
     public Hotel(String hotelName, int availableRooms, List<Facility> facilities, int pricePerNight) {
         this.hotelName = hotelName;
         this.availableRooms = availableRooms;
@@ -48,5 +52,16 @@ public class Hotel {
 
     public void setPricePerNight(int pricePerNight) {
         this.pricePerNight = pricePerNight;
+    }
+
+
+    @Override
+    public String toString(){
+        return "Hotel{"+
+                "hotelName='" + hotelName + '\'' +
+                ", availableRooms=" + availableRooms +
+                ", facilities=" + facilities +
+                ", pricePerNight=" + pricePerNight +
+                '}';
     }
 }
